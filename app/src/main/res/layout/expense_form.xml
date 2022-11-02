@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="56sp"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/relative_expense"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="115dp">
+
+            <TextView
+                android:id="@+id/textView_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:text="100.000"
+                android:textSize="32dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Travel" />
+
+                <TextView
+                    android:id="@+id/textView_date"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_type"
+                    android:layout_marginTop="5dp"
+                    android:text="Date of Expense" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
